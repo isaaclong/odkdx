@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ODK Diagnostics</string>
+    <string name="app_description">Scan and process rapid diagnostic tests</string>
+    <string name="bubble_process_activity">Processing Test</string>
+    <string name="view_tests_activity">Choose Test Type</string>
+    <string name="bubble_instructions_activity">Instructions</string>
+    <string name="display_results_activity">Display Results</string>
+    <string name="display_processed_data_activity">Display Diagnosis</string>
+    <string name="after_photo_taken_activity">Captured Test</string>
+    <string name="export_to_collect">Export Results to ODK Collect</string>
+    <string name="app_settings">Settings</string>
+    <string name="import_puck_data">Import Puck Sensor Data</string>
+
+    <!-- For Main Screen -->
+    <string name="Test_Type">Test Type: </string>
+    <string name="the_current_test_is">Test type is:</string>
+    <string name="ScanButton">Scan Test</string>
+    <string name="ViewTestsButton">Choose Test Type</string>
+    <string name="InstructionsButton">Instructions</string>
+    <string name="SettingsButton">Settings</string>
+    <string name="ScanBarcodeButton">Scan Barcode</string>
+    <string name="SaveButton">Save</string>
+    <string name="ReturnButton">Finish Test</string>
+    <string name="PatientID">Patient ID: </string>
+    
+    <!-- DisplayResults -->    
+    <string name="LaunchCollectButton">Save and Exit</string>
+    <string name="Results">Test Results</string>
+    
+    <!-- AfterPhotoTaken -->
+    <string name="process">Process Test</string>
+    <string name="retake_photo">Retake Photo</string>
+    <string name="process_batch">Process Batch</string>
+    <string name="aligning">Aligning test...</string>
+    <string name="processing">Processing test...</string>
+    <string name="processing_batch">Processing batch...</string>
+    <string name="could_not_register">Sorry, the test could not be registered.</string>
+    <string name="aligned_test">Aligned Image</string>
+    
+    <!-- Popup menu -->
+    <string name="save_data">Save Diagnosis</string>
+    <string name="display_data">Display Diagnosis</string>
+    <string name="main_menu">Main Menu</string>
+
+    <!-- Instructions -->
+    <string name="Instructions1">One</string>
+    <string name="Instructions2">Two</string>
+    <string name="Instructions3">Three</string>
+    <string name="Instructions4">Four</string>
+
+    <!-- Puck Bluetooth -->
+
+</resources>

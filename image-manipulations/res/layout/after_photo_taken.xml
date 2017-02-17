@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+    
+    <TextView
+        style="@style/StandardFont"
+        android:layout_margin="5dp"
+        android:background="#025"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/PatientID"
+    	style="@style/StandardFont"
+    	android:layout_margin="5dp"
+    	android:text="@string/PatientID"
+    	android:textColor="#fff"
+    	android:textSize="20dip" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/Test_Type"
+    	style="@style/StandardFont"
+    	android:layout_margin="5dp"
+    	android:text="@string/Test_Type"
+    	android:textColor="#fff"
+    	android:textSize="20dip">
+   	</TextView>
+    
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+        <Button
+            android:id="@+id/process_batch_button"
+            android:text="@string/process_batch" 
+            android:layout_width="fill_parent" 
+    		style="@style/StandardButton"
+    		android:layout_height="50dp"/>
+            
+        <Button
+            android:id="@+id/retake_button"
+            android:text="@string/retake_photo" 
+            android:layout_width="fill_parent" 
+    		style="@style/StandardButton"
+    		android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/process_button"
+            android:enabled="true"
+            android:text="@string/process" 
+            android:layout_width="fill_parent" 
+    		style="@style/StandardButton"
+    		android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:id="@+id/failureMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/could_not_register"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+

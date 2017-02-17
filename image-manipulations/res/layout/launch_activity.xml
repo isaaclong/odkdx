@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/StandardFont"
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:background="#025"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/PatientID"
+    	style="@style/StandardFont"
+    	android:layout_margin="5dp"
+    	android:text="@string/PatientID"
+    	android:textColor="#fff"
+    	android:textSize="20dip" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/Test_Type"
+    	style="@style/StandardFont"
+    	android:layout_margin="5dp"
+    	android:text="@string/Test_Type"
+    	android:textColor="#fff"
+    	android:textSize="20dip">
+   	</TextView>
+
+    <Button
+        android:id="@+id/ScanButton"
+        style="@style/StandardButton"
+        android:text="@string/ScanButton" 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+    </Button>
+
+    <Spinner
+        android:id="@+id/rdtSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensor Puck Bluetooth"
+        android:id="@+id/puck_button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/ReturnButton"
+        style="@style/StandardButton"
+        android:text="@string/ReturnButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+    </Button>
+
+    <Button
+        android:id="@+id/SettingsButton"
+        style="@style/StandardButton"
+        android:text="@string/SettingsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+    </Button>
+
+</LinearLayout>
+
+

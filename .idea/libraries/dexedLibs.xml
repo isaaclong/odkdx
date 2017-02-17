@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/image-manipulations/bin/dexedLibs/opencv-2.3.1-7eec1462ebf20a2503c9f9b627d987ff.jar!/" />
+      <root url="jar://$PROJECT_DIR$/image-manipulations/bin/dexedLibs/kxml2-2.2.2-468b7019d8f5881caf09680e7e37fdf5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

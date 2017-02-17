@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ODK Diagnostics</string>
+    <string name="app_description">Scan and process rapid diagnostic tests</string>
+    <string name="bubble_process_activity">Procesando Examen</string>
+    <string name="view_tests_activity">Ver Exámenes</string>
+    <string name="bubble_instructions_activity">Instrucciones</string>
+    <string name="display_results_activity">Mostrar Resultados</string>
+    <string name="display_processed_data_activity">Mostrar Diagnóstico</string>
+    <string name="after_photo_taken_activity">Examen</string>
+    <string name="export_to_collect">Exportar Resultados a ODK Collect</string>
+    <string name="app_settings">Configuraciones</string>
+
+    <!-- For Main Screen -->
+    <string name="Test_Type">Tipo de Examen</string>
+    <string name="the_current_test_is">El Tipo de Examen es:</string>
+    <string name="ScanButton">Escanear Nuevo Examen</string>
+    <string name="ViewTestsButton">Ver Exámenes Previos</string>
+    <string name="InstructionsButton">Instrucciones</string>
+    <string name="SettingsButton">Configuraciones</string>
+    <string name="SaveButton">Guardar</string>
+    
+    <!-- DisplayResults -->    
+    <string name="LaunchCollectButton">Exportar Resultados a ODK Collect</string>
+    <string name="Results">Resultados</string>
+    
+    <!-- AfterPhotoTaken -->
+    <string name="process">Procesar</string>
+    <string name="retake_photo">Retomar</string>
+    <string name="aligning">Alineando Examen...</string>
+    <string name="processing">Procesando Examen...</string>
+    <string name="could_not_register">Lo sentimos, la imagen no ha podido ser alineada.</string>
+    <string name="aligned_test">La Imagen Alineada</string>
+    
+    <!-- Popup menu -->
+    <string name="save_data">Guardar Diagnóstico</string>
+    <string name="display_data">Mostrar Diagnóstico</string>
+    <string name="main_menu">Menú Principal</string>
+
+    <!-- Instructions -->
+    <string name="Instructions1">One</string>
+    <string name="Instructions2">Two</string>
+    <string name="Instructions3">Three</string>
+    <string name="Instructions4">Four</string>
+
+</resources>

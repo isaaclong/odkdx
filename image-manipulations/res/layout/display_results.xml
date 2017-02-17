@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+    
+    <TextView
+        style="@style/StandardFont"
+        android:layout_margin="5dp"
+        android:background="#025"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/PatientID"
+    	style="@style/StandardFont"
+    	android:layout_margin="5dp"
+    	android:text="@string/PatientID"
+    	android:textColor="#fff"
+    	android:textSize="20dip" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/Test_Type"
+    	style="@style/StandardFont"
+    	android:layout_margin="5dp"
+    	android:text="@string/Test_Type"
+    	android:textColor="#fff"
+    	android:textSize="20dip">
+   	</TextView>
+   	
+    <TextView
+     style="@style/StandardFont"
+     android:layout_margin="5dp"
+     android:background="#025"
+     android:text="@string/Results"
+     android:textColor="#fff"
+     android:textSize="20dip" />
+        
+    <WebView
+     android:id="@+id/webview"
+     android:layout_width="fill_parent"
+     android:layout_height="100px"
+     android:layout_weight="1"
+     android:background="#000000"
+     android:scrollbars="none"
+     android:visibility="gone" />
+
+    <Button
+    android:id="@+id/LaunchCollectButton"
+    android:text="@string/LaunchCollectButton" 
+    android:layout_width="fill_parent" 
+    style="@style/StandardButton"
+    android:layout_height="50dp">
+    </Button>
+</LinearLayout>
+
+
