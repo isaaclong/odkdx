@@ -261,6 +261,16 @@ public class DisplayResults extends Activity {
 						fos.write(buf, 0, len);
 					}
 
+					// copy over alligned image file to instance dir
+					imagePath = DiagnosticsUtils.getAlignedPhotoPath(photoName);
+					fis = new FileInputStream(imagePath);
+					fos = new FileOutputStream(instancePath + instance_name + "aligned_" + new File(imagePath).getName());
+					// Transfer bytes from in to out
+					buf = new byte[1024];
+					while ((len = fis.read(buf)) > 0) {
+						fos.write(buf, 0, len);
+					}
+
 					// copy image.jpg to SD card
 					fis = new FileInputStream(imagePath);
 					fos = new FileOutputStream(sdHomeDir + instance_name + "markedup_" + new File(imagePath).getName());
