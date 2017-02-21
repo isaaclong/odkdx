@@ -210,7 +210,7 @@ public class DisplayResults extends Activity {
 				// A few assumptions for the following:
 				// form name is assumed to be the same for all runs
 
-				String formName = "CHAI";
+				String formName = "GSID";
 				//if(photoName.equals("syphilis_output")) formName = "ANC";
 				String instancePath = "/sdcard/odk/instances/";
 				//String instancePath = "/storage/extSdCard/Android/data/org.odk.collect.android/files/odk/instances/"; // for GSID external storage

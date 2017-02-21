@@ -492,9 +492,12 @@ public class LaunchActivity extends Activity
 				TextView tType = (TextView) findViewById(R.id.Test_Type);
 				tType.setText("Test Type:\n" + label);
 
+
+				photoName = "test_output";
 				// photo name is now the same for each test: the text file is appended to the answer form
 				// (this will cause cascading consquences in original source, because photoName has various dependencies
 				//photoName = testType + "_" + patientID;
+				/*
 				try {
 					if(DiagnosticsUtils.getTestType().equals("FirstResponse_HIV"))
 						photoName = "first_response_output";
@@ -526,6 +529,7 @@ public class LaunchActivity extends Activity
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				*/
 			}
 
 			public void onNothingSelected(AdapterView<?> parent) {
@@ -558,5 +562,6 @@ public class LaunchActivity extends Activity
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+		spinny.setEnabled(false);
 	}
 }
