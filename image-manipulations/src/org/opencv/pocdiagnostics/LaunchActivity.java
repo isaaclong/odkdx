@@ -9,8 +9,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -542,13 +544,34 @@ public class LaunchActivity extends Activity
 		// harcoded numbers refer to the order of the files in testDescription dir
 		// hardcoded strings refer to values given in the form
 		try {
-
 			for(int i = 0; i < spinny.getCount(); i++) {
 				if(getIntent().getExtras().getString("testType").equals(spinny.getItemAtPosition(i))) {
 					spinny.setSelection(i);
+					spinny.setEnabled(false);
+					break;
 				}
+			}
+
+			if (spinny.isEnabled()) {
+				// display error message: your test name was not found and exit
+				AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+				alertDialogBuilder
+						.setTitle("Collect Form Data Error")
+						.setMessage("The test name sent from your Collect form did not match the template image or the test description. Exiting...")
+						.setCancelable(false)
+						.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+							public void onClick(DialogInterface dialog,int id) {
+								// if this button is clicked, close
+								// current activity
+								finish();
+							}
+						});
+
+				AlertDialog alertDialog = alertDialogBuilder.create();
+				alertDialog.show();
 
 			}
+
 			/*
 			if(getIntent().getExtras().getString("testType").equals("Zim_Determine_HIV")) {
 				Log.i("LaunchActivity","Setting to 3");
@@ -562,6 +585,6 @@ public class LaunchActivity extends Activity
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		spinny.setEnabled(false);
+
 	}
 }
