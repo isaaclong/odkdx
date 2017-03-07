@@ -65,14 +65,14 @@ public class DiagnosticsUtils {
 	public static boolean dflag = false;
 	public static String dflagS = "False"; // default false, if invalid will not change
 	
-	//public static final String appFolder = Environment.getExternalStorageDirectory().toString() + "/Diagnostics/";
-	public static final String appFolder = "/storage/extSdCard/Android/data/org.opencv.pocdiagnostics/files/Diagnostics/";
+	public static String appFolder2 = Environment.getExternalStorageDirectory().toString() + "/Diagnostics/";
+	public static String appFolder = "/storage/extSdCard/Android/data/org.opencv.pocdiagnostics/files/Diagnostics/";
 	//public static final String appFolder = "/storage/sdcard1/Diagnostics/";
 
 	// quickly updating this for external SD card usage
 	//public static final String internalSDCardPath = "/storage/sdcard0/Diagnostics/";
 	//public static final String internalSDCardPath = "/storage/sdcard1/Diagnostics/";
-	public static final String internalSDCardPath = "/storage/extSdCard/Android/data/org.opencv.pocdiagnostics/files/Diagnostics/";
+	public static String internalSDCardPath = "/storage/extSdCard/Android/data/org.opencv.pocdiagnostics/files/Diagnostics/";
 	public static final String photoDir = "CapturedPhotos/";
 	public static final String alignedPhotoDir = "AlignedPhotos/";
 	public static final String jsonDir = "ProcessedData/";

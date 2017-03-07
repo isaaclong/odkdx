@@ -3,7 +3,9 @@ package org.opencv.pocdiagnostics;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -364,9 +366,28 @@ public class LaunchActivity extends Activity
 	}	
 	private void setupDirs()
 	{
+		List<String> writeablePaths = new ArrayList<String>();
+
 		for(File f: this.getExternalFilesDirs(null)) {
 			Log.d("writable path", f.getAbsolutePath());
+			writeablePaths.add(f.getAbsolutePath());
 		}
+
+		boolean hasSdCard = writeablePaths.size() >= 2;
+		if(hasSdCard) {
+			DiagnosticsUtils.appFolder = writeablePaths.get(1) + "/Diagnostics/";
+			DiagnosticsUtils.internalSDCardPath = DiagnosticsUtils.appFolder;
+			Log.i("SET UP DIRS", "Has SD. Setting dir to " + writeablePaths.get(1) + "/Diagnostics/");
+		}
+		else {
+			DiagnosticsUtils.appFolder = writeablePaths.get(0) + "/Diagnostics/";
+			DiagnosticsUtils.internalSDCardPath = DiagnosticsUtils.appFolder;
+			Log.i("SET UP DIRS", "No SD. Setting dir to " + writeablePaths.get(0) + "/Diagnostics/");
+		}
+
+
+		File f = this.getExternalFilesDir(null);
+		Log.d("writable path (single)", f.getAbsolutePath());
 
 		Log.i("SET UP DIRS", "STARTING");
 		Log.i("SET UP DIRS", DiagnosticsUtils.appFolder);
@@ -571,6 +592,8 @@ public class LaunchActivity extends Activity
 				alertDialog.show();
 
 			}
+
+			Log.d("EXTERNAL DIR", DiagnosticsUtils.appFolder2);
 
 			/*
 			if(getIntent().getExtras().getString("testType").equals("Zim_Determine_HIV")) {
